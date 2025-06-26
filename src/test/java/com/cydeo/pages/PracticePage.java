@@ -8,15 +8,12 @@ import org.openqa.selenium.support.PageFactory;
 
 public class PracticePage {
 
-    public PracticePage(){
-        PageFactory.initElements(Driver.getDriver(),this);
+    public PracticePage() {
+        PageFactory.initElements(Driver.getDriver(), this);
     }
 
-    public void clickLink (String linkText){
+    public void clickLink(String linkText) {
         Driver.getDriver().findElement(By.partialLinkText(linkText)).click();
     }
-
-//    @FindBy (xpath = "//a[text()='A/B Testing']")
-//    public WebElement abTestLink;
 
 }
